@@ -37,6 +37,7 @@ pep8-naming = "^0.13.2"
 pre-commit = "^2.20.0"
 
 [tool.mypy]
+exclude = ".venv,.mypy_cache,.git,build,dist"
 pretty = true
 check_untyped_defs = true
 disallow_incomplete_defs = true
@@ -47,9 +48,18 @@ warn_unreachable = true
 warn_unused_ignores = true
 
 [tool.black]
+exclude = '''
+(
+  /(
+      \.git
+    | \.mypy_cache
+    | \.venv
+  )/
+)
+'''
 line-length = 88
 include = "\\.pyi?$"
 
 [tool.flake8]
 max-line-length = 88
-exclude = ".git,__pycache__,.mypy_cache"
+exclude = ".git,__pycache__,.mypy_cache,.venv"
