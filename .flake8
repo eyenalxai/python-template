@@ -16,4 +16,4 @@ max-line-length = 88
 # __init__.py files are excluded by default
 exclude = .git,.idea,.mypy_cache,.venv,.vscode,.migrations,alembic
 
-nested-classes-whitelist = Config, Password, Username, CategoryName
+nested-classes-whitelist = Config

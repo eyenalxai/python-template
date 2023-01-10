@@ -3,7 +3,7 @@ name = ""
 version = ""
 description = ""
 authors = [
-    {name = "Yest Izit", email = "hi@dmitry.email"},
+    {name = "Sax Dhiut", email = "mail@iyxeyl.me"},
 ]
 dependencies = []
 requires-python = ">=3.11"
@@ -16,9 +16,10 @@ dev = [
     "isort>=5.11.3",
     "wemake-python-styleguide>=0.17.0",
     "mypy>=0.991",
-    "black[d]>=22.12.0",
+    "black>=22.12.0",
     "pre-commit>=2.20.0",
-    "vulture>=2.6",
+    "vulture>=2.7",
+    "pytest>=7.2.0",
 ]
 
 
